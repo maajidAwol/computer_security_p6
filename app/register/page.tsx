@@ -258,10 +258,11 @@ import { logAction } from '../utils/logging'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Link, Loader2 } from 'lucide-react'
+import { Loader2 } from 'lucide-react'
 import PasswordStrengthMeter from '../../components/PasswordStrengthMeter'
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { AlertCircle } from 'lucide-react'
+import Link from 'next/link'
 
 export default function Register() {
   const [email, setEmail] = useState('')
