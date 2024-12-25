@@ -14,7 +14,8 @@ export function middleware(request: NextRequest) {
   response.headers.set('x-middleware-cache', 'no-cache')
 
   // Log the request
-  console.log(`[${new Date().toISOString()}] ${request.method} ${request.url} - IP: ${request.ip}`)
+  const ip = request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip') || 'unknown';
+  console.log(`[${new Date().toISOString()}] ${request.method} ${request.url} - IP: ${ip}`)
 
   return response
 }
