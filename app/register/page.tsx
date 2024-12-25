@@ -258,7 +258,7 @@ import { logAction } from '../utils/logging'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Loader2 } from 'lucide-react'
+import { Link, Loader2 } from 'lucide-react'
 import PasswordStrengthMeter from '../../components/PasswordStrengthMeter'
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { AlertCircle } from 'lucide-react'
@@ -337,7 +337,7 @@ export default function Register() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
       <Card className="w-full max-w-md">
         <CardHeader>
           <CardTitle>Register</CardTitle>
@@ -394,6 +394,7 @@ export default function Register() {
               {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : 'Register'}
             </Button>
           </form>
+          <Link href="/login" className="text-blue-500 hover:underline">Already have an account? Login</Link>
           {error && <p className="text-red-500 mt-4">{error}</p>}
         </CardContent>
       </Card>

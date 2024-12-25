@@ -117,7 +117,7 @@ export default function AdminLogs() {
   if (!user) return null
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-cyan-500 to-blue-500 p-4">
+    <div className="min-h-screen bg-gray-100 p-4">
       <Card>
         <CardHeader>
           <CardTitle>Admin Logs</CardTitle>
