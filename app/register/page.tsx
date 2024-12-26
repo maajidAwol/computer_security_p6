@@ -259,7 +259,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Loader2 } from 'lucide-react'
-import PasswordStrengthMeter from '../../components/PasswordStrengthMeter'
+import PasswordStrengthMeter from '../../components/app_components_PasswordStrengthMeter'
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { AlertCircle } from 'lucide-react'
 import Link from 'next/link'
