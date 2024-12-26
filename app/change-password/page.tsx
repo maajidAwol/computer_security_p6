@@ -23,7 +23,7 @@ export default function ChangePassword() {
       if (user) {
         await updatePassword(user, newPassword)
         setSuccess(true)
-        setTimeout(() => router.push('/dashboard/user'), 2000)
+        setTimeout(() => router.push('/dashboard/user'), 10)
       } else {
         setError('User not found')
       }
